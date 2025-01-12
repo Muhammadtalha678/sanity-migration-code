@@ -36,7 +36,20 @@ Finally, execute the migration script to migrate the data:
 node ./dist/importData.js
 ```
 
-## Packages Used
+### 6. Add Schema
+After completing the above steps, follow these instructions to create and use the schema:
+1. Create a schema as defined by Sir Ali Jawwad from the given URL.
+2. Copy the schema into the `sanity` folder and create a `products.ts` file.
+3. Import the schema in the `index.ts` file located in `sanity/schemaTypes`.
+
+### 7. Access the Sanity Studio
+Visit your Next.js project URL at:
+```
+http://localhost:3000/studio/
+```
+The data you migrated to Sanity will be displayed here.
+
+## Packages Used in Sanity Migration
 - `@sanity/client`
 - `axios`
 - `dotenv`
